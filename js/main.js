@@ -14,8 +14,10 @@ let listaSpesa = ["Patate", "Carote", "Latte", "spinaci", "bagno schiuma"];
 let i = 0
 
 while(i < listaSpesa.length){
-
-    console.log(listaSpesa[i])
+    const list = document.createElement("li");
+    const prodotti = document.createTextNode(`${listaSpesa[i]}`);
+    list.appendChild(prodotti);
+    document.getElementById("lista").appendChild(list);
 
     i++
 }
